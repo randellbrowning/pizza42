@@ -7,7 +7,7 @@ import loadingAnim from "../../images/loading.gif";
 
 const Profile = () => {
   const { loading, user } = useAuth0();
-
+  
   if (loading || !user) {
     return (
       <img className="pageLoader" src={loadingAnim} alt="loading"/>

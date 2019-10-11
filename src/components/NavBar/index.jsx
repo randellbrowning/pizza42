@@ -19,7 +19,7 @@ export default function NavBar() {
           pizza42
         </Link>
         <div className="navbar-nav">
-          <Link className="nav-item nav-link active" to="Blank">
+          <Link className="nav-item nav-link active" to="Home">
             Home
           </Link>
           <Link className="nav-item nav-link active" to="Grid">
@@ -33,9 +33,9 @@ export default function NavBar() {
 
           <div>
       {!isAuthenticated && (
-        <Link className="nav-item nav-link active" to="#"
+        <Link className="nav-item nav-link active" to=""
           onClick={() =>
-            loginWithRedirect({})
+            loginWithRedirect({redirect_uri: window.location.origin})
           }
         >
           Log in

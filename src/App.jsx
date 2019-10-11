@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-wrapper";
 import Footer from "./components/Footer";
 
-import Blank from "./components/Blank";
+import Home from "./components/Home";
 import Grid from "./components/Grid";
 import Profile from "./components/Customer/Profile";
 import loadingAnim from "./images/loading.gif";
@@ -26,8 +26,8 @@ function App() {
       <React.Fragment>
         <NavBar />
         <Switch>
-          <Redirect exact path = "/" to = "/Blank" />
-          <Route path = "/Blank" component = { Blank } />
+          <Redirect exact path = "/" to = "/Home" />
+          <Route path = "/Home" component = { Home } />
           <Route path = "/Grid" component = { Grid } />
           <Route path="/profile" component={Profile} />
         </Switch>

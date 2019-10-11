@@ -1,7 +1,6 @@
 ﻿import React, { Component } from "react";
 import classnames from "classnames";
 import WarningMessage from "../WarningMessage";
-import GreyBox from "../../images/GreyBox.svg";
 import styles from "./grid.module.css";
 import CONSTANTS from "../../constants";
 
@@ -45,7 +44,6 @@ export default class Grid extends Component {
 
   render() {
     const {
-      gridTextAssets,
       WarningMessageOpen,
       WarningMessageText
     } = this.state;
@@ -55,7 +53,7 @@ export default class Grid extends Component {
           <h1>pizza42</h1>
           <p>This is placeholder text. Your web app description goes here.</p>
           <a
-            href="https://github.com/Microsoft/WebTemplateStudio"
+            href="https://github.com/randellbrowning/pizza42"
             className="btn btn-primary my-2"
           >
             Link to our Github

@@ -55,7 +55,7 @@ export default class Grid extends Component {
           <h1>pizza42</h1>
           <p>This is placeholder text. Your web app description goes here.</p>
           <a
-            href="https://github.com/Microsoft/WebTemplateStudio"
+            href="https://github.com/randellbrowning/pizza42"
             className="btn btn-primary my-2"
           >
             Link to our Github
